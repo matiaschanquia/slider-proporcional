@@ -10,7 +10,10 @@ li {
 
 body {
     background-color: cadetblue;
-    overflow-x: hidden;
+}
+
+.slider {
+    overflow: hidden;
 }
 
 .container-slider {
@@ -20,6 +23,7 @@ body {
     margin: 20px auto;
     padding: 20px;
     position: relative;
+    border: 2px solid black;
 }
 
 .content-slider {

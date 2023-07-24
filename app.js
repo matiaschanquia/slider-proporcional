@@ -13,9 +13,10 @@ function obtenerAncho() {
     const anchoCajaMax = 50;
     const anchoPantMin = 500;
     const anchoPantMax = 1000;
-    const anchoPant = window.innerWidth;
+    const anchoContainer = containerSlider.offsetWidth;
+    console.log(anchoContainer);
 
-    const formulaMagica = anchoCajaMin + (anchoCajaMax - anchoCajaMin) * ((anchoPant - anchoPantMin) / (anchoPantMax - anchoPantMin));
+    const formulaMagica = anchoCajaMin + (anchoCajaMax - anchoCajaMin) * ((anchoContainer - anchoPantMin) / (anchoPantMax - anchoPantMin));
 
     console.log(formulaMagica);
 
@@ -26,6 +27,7 @@ function cambiarAnchoContainer(anchoProporcional) {
     contentSlider.style.width = `${anchoProporcional * cantData}%`;
 }
 
+const containerSlider = document.querySelector(".container-slider")
 const contentSlider = document.querySelector(".content-slider");
 const containerData = document.querySelectorAll(".container-data");
 let index = 0;
