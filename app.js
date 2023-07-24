@@ -14,11 +14,8 @@ function obtenerAncho() {
     const anchoPantMin = 500;
     const anchoPantMax = 1000;
     const anchoContainer = containerSlider.offsetWidth;
-    console.log(anchoContainer);
 
     const formulaMagica = anchoCajaMin + (anchoCajaMax - anchoCajaMin) * ((anchoContainer - anchoPantMin) / (anchoPantMax - anchoPantMin));
-
-    console.log(formulaMagica);
 
     return formulaMagica;
 }
