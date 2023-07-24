@@ -1,0 +1,97 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+li {
+    list-style: none;
+}
+
+body {
+    background-color: cadetblue;
+    overflow-x: hidden;
+}
+
+.container-slider {
+    background-color: aliceblue;
+    width: 90%;
+    max-width: 900px;
+    margin: 20px auto;
+    padding: 20px;
+    position: relative;
+}
+
+.content-slider {
+    height: 200px;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    align-items: stretch;
+    background-color: burlywood;
+    transition: all .3s ease;
+}
+
+.container-data {
+    display: flex;
+    margin: 20px;
+    background-color: darkgrey;
+}
+
+.container-data > h2 {
+    margin: auto;
+}
+
+.puntos {
+    position: absolute;
+    padding: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 0;
+}
+
+.punto {
+    width: 16px;
+    height: 16px;
+    background-color: white;
+    border-radius: 50%;
+    cursor: pointer;
+    box-shadow: 2px 2px 4px gray;
+}
+
+.punto.activo {
+    cursor: default;
+    background-color: rgb(179, 179, 179);
+}
+
+p {
+    font-size: 20px;
+}
+
+.btn-mover {
+    position: absolute;
+    background-color: rgb(1, 99, 148);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    cursor: pointer;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #fff;
+    font-size: 20px;
+}
+
+.btn-mover.izq {
+    left: 20px;
+}
+
+.btn-mover.der {
+    right: 20px;
+}
